@@ -66,9 +66,9 @@ user, a made-up bench is worse than no answer at all.
 
 ## The same app is a different app in the next city
 
-Two fetches, both in Maharashtra, about 300 km apart:
+Two fetches, two Indian cities about 300 km apart:
 
-| | Chhatrapati Sambhajinagar | Pune |
+| | The smaller city | The larger city |
 | --- | --- | --- |
 | places within 1200m | 28 | **701** |
 | benches | **0** | 24 |
