@@ -25,11 +25,11 @@ Doorstep takes today's ceiling as an input, finds everything genuinely within
 it, and asks a local open-weight model to pick **one** place worth the walk.
 
 ```
-How far today?  [=======o--------------]  250 metres
+How far today?  [=====o----------------]  200 metres
 
-   Historical Ganesh Temple
-   265 metres · somewhere to sit · shaded
-   "The Ganesh Temple offers a peaceful spot to rest."
+   Balbhim Mandir
+   138 metres · somewhere to sit · shaded
+   "Shaded most of the way, and somewhere to sit at the end."
 ```
 
 Then, later, one question: did you go? That is the whole loop.
@@ -70,10 +70,10 @@ Two fetches, both in Maharashtra, about 300 km apart:
 
 | | Chhatrapati Sambhajinagar | Pune |
 | --- | --- | --- |
-| places within 1200m | 23 | **299** |
+| places within 1200m | 28 | **701** |
 | benches | **0** | 24 |
-| mapped trees | 3 | 171 |
-| anything within 200m | **nothing** | 4 places |
+| mapped trees | 3 | 566 |
+| anything within 200m | **nothing** | 3 places |
 
 Same code, same radius, same query. In one neighbourhood Doorstep has a park,
 a bench and a tree to choose between. In the other it has to say *there is
