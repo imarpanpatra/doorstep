@@ -64,18 +64,29 @@ That is the map being thin here, not you.
 It does not stretch the radius. It does not invent a destination. For this
 user, a made-up bench is worse than no answer at all.
 
-## The map is thin where the need is greatest
+## The same app is a different app in the next city
 
-The first real fetch around my neighbourhood in Chhatrapati Sambhajinagar
-returned 23 places and **zero benches**.
+Two fetches, both in Maharashtra, about 300 km apart:
 
-OpenStreetMap's street-furniture layer — the benches, drinking fountains and
-mapped trees that make an app like this trivial in Berlin — barely exists
-across most of India. Which is exactly backwards: the hotter and denser the
-street, the more someone with a short range needs to know where they can stop.
+| | Chhatrapati Sambhajinagar | Pune |
+| --- | --- | --- |
+| places within 1200m | 23 | **299** |
+| benches | **0** | 24 |
+| mapped trees | 3 | 171 |
+| anything within 200m | **nothing** | 4 places |
 
-So the list of what counts as a destination is not the list you write from a
-European map. It is what is actually mapped here:
+Same code, same radius, same query. In one neighbourhood Doorstep has a park,
+a bench and a tree to choose between. In the other it has to say *there is
+nothing within reach of your door*, because OpenStreetMap genuinely does not
+know about anything there.
+
+OSM is volunteer-mapped, so its street-furniture layer tracks where mappers
+live rather than where benches are. That is exactly backwards for this app:
+the places with the thinnest data are not the places with the fewest benches,
+they are the places with the fewest people mapping them.
+
+So the list of what counts as a destination is not the list you would write
+looking at a European map. It is what is reliably mapped across India:
 
 | Mapped everywhere here | Mapped almost nowhere here |
 | --- | --- |
