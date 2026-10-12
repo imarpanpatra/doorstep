@@ -18,12 +18,11 @@ const ENDPOINT = process.env.OVERPASS || null;
 /* What counts as a destination when you can only go a little way.
  *
  * The obvious list -- benches, trees, drinking fountains -- is the list you
- * write if you have only ever looked at a European map. The first real fetch
- * here returned 23 places and ZERO benches, because OpenStreetMap's street
- * furniture layer is thin across most of India. An app that depends on mapped
- * benches works in Berlin and fails in Chhatrapati Sambhajinagar, which is
- * precisely backwards: the denser and hotter the street, the more someone with
- * a short range needs to know where they can stop.
+ * write if you have only ever looked at a European map. Two test fetches 300km
+ * apart returned 299 places with 24 benches, and 23 places with none at all.
+ * OpenStreetMap is volunteer-mapped, so its street furniture layer tracks
+ * where mappers live rather than where benches are, and an app that depends on
+ * mapped benches simply stops working in half the places that need it.
  *
  * So this list is what actually exists on the map here. Temples and mandirs
  * are mapped everywhere and are reliably shaded, quiet and somewhere you may
