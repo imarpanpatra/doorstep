@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Doorstep</title><link rel="stylesheet" href="styles.css">
+</head><body>
+
+<header>
+  <div class="brand">Doorstep</div>
+  <p class="tag">Outside, for people whose outside is two hundred metres.</p>
+</header>
+
+<main>
+  <section class="ask">
+    <h2>How far today?</h2>
+    <p class="hint">Not a target. A ceiling. Some days it is smaller, and that is allowed.</p>
+    <div class="reach">
+      <input type="range" id="reach" min="50" max="2000" step="25" value="200">
+      <div class="reachval"><span id="reachNum">200</span><span class="unit">metres</span></div>
+    </div>
+    <p class="within" id="within"></p>
+    <button id="go">Find me somewhere</button>
+  </section>
+
+  <section id="result" hidden></section>
+
+  <section id="pendingWrap" hidden>
+    <h2>Last time</h2>
+    <div id="pending"></div>
+  </section>
+
+  <section>
+    <h2>Lately <span class="sub">no streaks, on purpose</span></h2>
+    <div id="stats" class="stats"></div>
+    <ul id="recent" class="recent"></ul>
+  </section>
+</main>
+
+<footer>
+  Chosen by an open-weight model on this machine. The map was downloaded once.
+  Nothing about where you go leaves this device.
+</footer>
+
+<script src="app.js"></script></body></html>
